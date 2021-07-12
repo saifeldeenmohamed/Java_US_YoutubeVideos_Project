@@ -29,20 +29,13 @@ public class MainClass {
         JavaSparkContext sparkContext = new JavaSparkContext (conf);
         // LOAD DATASETS
         JavaRDD<String> videos = sparkContext.textFile ("src/main/resources/USvideos.csv");
-        
-        
-        
+ 
         // PRINTING
         System.out.println("titles =");
         titlesFn(videos);
         System.out.println("tags =");
         tagsFn(videos);
-        
-        
     }
 
-    
-    
-        
 }
 

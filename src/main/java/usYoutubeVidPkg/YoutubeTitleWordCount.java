@@ -63,7 +63,6 @@ public class YoutubeTitleWordCount {
     }
     
     
-    
     public static void tagsFn(JavaRDD<String> videos) {
         //-----------------------------------Exctact tag ---------------------------
         JavaRDD<String> tags = videos
